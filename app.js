@@ -11,12 +11,10 @@ const port = 3000
 const apiKey = process.env.MAIL_CHIMP_API_KEY;
 const server = process.env.MAIL_CHIMP_SERVER;
 const listId = process.env.MAIL_CHIMP_LIST_ID;
-
 client.setConfig({
     apiKey: apiKey,
     server: server,
 });
-
 
 app.use(bodyParser.urlencoded({
     extended: true
