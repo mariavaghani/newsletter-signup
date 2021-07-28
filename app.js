@@ -8,9 +8,9 @@ const app = express()
 const port = 3000
 
 // MailChimp
-const apiKey = "f0b6e7b4d5e322ea69f14a9297f57709-us6";
-const server = "us6"
-const listId = "a85d497b3f";
+const apiKey = process.env.MAIL_CHIMP_API_KEY;
+const server = process.env.MAIL_CHIMP_SERVER;
+const listId = process.env.MAIL_CHIMP_LIST_ID;
 
 client.setConfig({
     apiKey: apiKey,
